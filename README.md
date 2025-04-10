@@ -1,42 +1,45 @@
-# SARWESHVARAN A
-# 212223230198
-# IMPLEMENTATION OF BOOLEAN FUNCTION
+## Name:Rahul V
+## Register no:212223040163
+### EXP NO 1:STUDY OF LOGIC GATES
 
-**AIM:**
+**AIM:** 
 
-To implement the given logic function verify its operation in Quartus using Verilog programming.
+To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
+**Equipments Required:**
 
-F2=xy’z+x’y’z+w’xy+wx’y+wxy
-
-**Equipment Required:**
-
-Hardware – PCs, Cyclone II , USB flasher
-
-**Software – Quartus prime**
+Software – Quartus prime 
 
 **Theory**
 
-In digital electronics, Boolean functions are used to represent logical operations using variables and logic gates. These functions can be implemented using Verilog, a hardware description language (HDL), and simulated using software like Quartus Prime.
+Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
+AND gate OR gate NOT gate NAND gate NOR gate Ex-OR gate Ex-NOR gate
 
-In this experiment, two Boolean functions (F1 and F2) are implemented:
+**AND gate**
+The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB
+Y= A.B
+**OR gate** 
+The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high. A plus (+) is used to show the OR operation.
+Y= A+B
+**NOT gate**
 
-F1 = A’B’C’D’ + AC’D’ + B’CD’ + A’BCD + BC’D
-This is a 4-variable Boolean expression.
+The NOT gate is an electronic circuit that produces an inverted version of the input at its output. It is also known as an inverter. If the input variable is A, the inverted output is known as NOT A. This is also shown as A' or A with a bar over the top, as shown at the outputs.
+Y= A'
+**NAND gate**
+This is a NOT-AND gate which is equal to an AND gate followed by a NOT gate. The outputs of all NAND gates are high if any of the inputs are low. The symbol is an AND gate with a small circle on the output. The small circle represents inversion.
+Y= (AB)’
+**NOR gate**
+This is a NOT-OR gate which is equal to an OR gate followed by a NOT gate. The outputs of all NOR gates are low if any of the inputs are high. The symbol is an OR gate with a small circle on the output. The small circle represents inversion.
+Y= (A+B)’
+**Ex-OR gate**
+The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both of its two inputs are high. An encircled plus sign (⊕) is used to show the Ex-OR operation.
+Y= A⊕B
+**Ex-NOR gate**
 
-The variables used are A, B, C, and D.
+The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
+Y= A⊕B
 
-The function is implemented using basic logic gates like AND, OR, and NOT.
-
-F2 = xy’z + x’y’z + w’xy + wx’y + wxy
-This is another Boolean function with 4 variables: w, x, y, and z.
-
-It is implemented similarly using logic gates.
-
-
-
-**Procedure**
+**Procedure** 
 
 1.	Type the program in Quartus software.
 
@@ -49,59 +52,26 @@ It is implemented similarly using logic gates.
 5.	For different input combinations generate the timing diagram.
 
 
-**Truth Table**:
+**PROGRAM**
+![Screenshot 2025-03-17 114655](https://github.com/user-attachments/assets/e0c88f4c-c684-4302-a02f-5e9228eac3dc)
+
+ 
+**Logic symbol & Truthtable:**
+
+![image](https://github.com/user-attachments/assets/3d587784-cff7-48f7-a426-a7d0bbe62ae6)
 
 
-EXP2A:
+**RTL realization Output:** 
 
-![image](https://github.com/user-attachments/assets/1f4519bf-223a-4a93-8cce-886202995e8c)
-
-EXP2B:
-
-![image](https://github.com/user-attachments/assets/97069a12-5b31-458e-baca-e3eddf907dfd)
+![Screenshot 2025-03-17 114708](https://github.com/user-attachments/assets/7e59b940-f909-479a-a00a-98d98a23af6e)
 
 
+**RTL:**
 
-
-**Program:**
-
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-EXP2A:
-
-![Screenshot 2025-04-10 113428](https://github.com/user-attachments/assets/cefc0436-3cba-4ae7-9136-f875289465c5)
-
-
-
-EXP2B:
-
-![Screenshot 2025-04-10 113512](https://github.com/user-attachments/assets/0010b2ec-4477-491b-a633-fb4261d652fe)
-
-
-
-**RTL realization**
-
-EXP2A:
-
-![image](https://github.com/user-attachments/assets/c37d9714-6e7e-472e-b210-7f6eb6895acd)
-
-
-EXP2B:
-
-![image](https://github.com/user-attachments/assets/e48eeb01-94dd-438f-8ee9-a4e2e9020d40)
-
-
-**RTL**
-EXP2A:
-![image](https://github.com/user-attachments/assets/e307313f-38dc-458a-bcac-6e80d6807cd1)
-
-EXP2B:
-![image](https://github.com/user-attachments/assets/bc8c7789-711e-49c1-a1f2-b5024b2207e1)
-
-
+ ![image](https://github.com/user-attachments/assets/94616d82-87ec-45f5-a4a4-be0e9a351175)
 
 
 **Result:**
 
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+Thus the truth table of logic gates (AND,OR,NOT,NAND,NOR,XOR,XNOR) is successfully implemented and verified using verilog programmming in Quartus II.
 
