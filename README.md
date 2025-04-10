@@ -27,7 +27,7 @@ It is implemented similarly using logic gates.
 
 
 
-**Procedure**
+## Procedure
 
 1.	Type the program in Quartus software.
 
