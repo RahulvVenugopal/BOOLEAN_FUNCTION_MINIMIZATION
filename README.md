@@ -43,7 +43,8 @@ EXP2A:
 
 EXP2B:
 
-![image](https://github.com/user-attachments/assets/a8734346-5615-4d9d-844e-87381b4b486c)
+![image](https://github.com/user-attachments/assets/eb8411b7-bb3d-4972-bec5-5acf255998ce)
+
 
 
 **RTL realization**
