@@ -38,7 +38,8 @@ Program to implement the given logic function and to verify its operations in qu
 
 EXP2A:
 
-![image](https://github.com/user-attachments/assets/73ed2e51-3b9b-4270-b432-66f5c0d866a8)
+![Screenshot 2025-04-10 111426](https://github.com/user-attachments/assets/15142a7c-1542-41e1-8a49-ac12a64c386d)
+
 
 EXP2B:
 
