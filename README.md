@@ -1,8 +1,7 @@
-## Name: Rahul V
-## Reg no: 212223040163
-## EXP NO 2: IMPLEMENTATION OF BOOLEAN FUNCTION
-
-**AIM:**
+# BOOLEAN_FUNCTION_MINIMIZATION
+# Name : Rahul V
+# Reg No: 212223040163
+*AIM:*
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
 
@@ -10,24 +9,17 @@ F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 
 F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
-**Equipment Required:**
+*Equipment Required:*
 
 Hardware – PCs, Cyclone II , USB flasher
 
-**Software – Quartus prime**
+*Software – Quartus prime*
 
-**Theory**
-In digital electronics, Boolean functions are used to represent logical operations using variables and logic gates. These functions can be implemented using Verilog, a hardware description language (HDL), and simulated using software like Quartus Prime.
-In this experiment, two Boolean functions (F1 and F2) are implemented:
-F1 = A’B’C’D’ + AC’D’ + B’CD’ + A’BCD + BC’D
-This is a 4-variable Boolean expression.The variables used are A, B, C, and D.The function is implemented using basic logic gates like AND, OR, and NOT.
-F2 = xy’z + x’y’z + w’xy + wx’y + wxy
-This is another Boolean function with 4 variables: w, x, y, and z.
-It is implemented similarly using logic gates.
+*Theory*
 
+*Logic Diagram*
 
-
-## Procedure
+*Procedure*
 
 1.	Type the program in Quartus software.
 
@@ -40,59 +32,39 @@ It is implemented similarly using logic gates.
 5.	For different input combinations generate the timing diagram.
 
 
-**Truth Table**:
+*Program:*
+
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
 
-EXP2A:
+```
+module fff(a,b,c,d,w,x,y,z,F1,F2);
+input a,b,c,d,w,x,y,z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~a)&(~b)&(~c)&(~d);
+assign x2=(a)&(~c)&(~d);
+assign x3=(~b)&(c)&(~d);
+assign x4=(~a)&(b)&(c)&(d);
+assign x5=(b)&(~c)&(d);
+assign x6=(x)&(~y)&(z);
+assign x7=(~x)&(~y)&(z);
+assign x8=(~w)&(x)&(y);
+assign x9=(w)&(~x)&(y);
+assign x10=(w)&(x)&(y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule
 
-![image](https://github.com/user-attachments/assets/1f4519bf-223a-4a93-8cce-886202995e8c)
-
-EXP2B:
-
-![image](https://github.com/user-attachments/assets/97069a12-5b31-458e-baca-e3eddf907dfd)
-
-
-
-
-**Program:**
-
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-EXP2A:
-
-![Screenshot 2025-04-10 113428](https://github.com/user-attachments/assets/cefc0436-3cba-4ae7-9136-f875289465c5)
-
-
-
-EXP2B:
-
-![Screenshot 2025-04-10 113512](https://github.com/user-attachments/assets/0010b2ec-4477-491b-a633-fb4261d652fe)
-
-
-
-**RTL realization**
-
-EXP2A:
-
-![image](https://github.com/user-attachments/assets/c37d9714-6e7e-472e-b210-7f6eb6895acd)
-
-
-EXP2B:
-
-![image](https://github.com/user-attachments/assets/e48eeb01-94dd-438f-8ee9-a4e2e9020d40)
-
-
-**RTL**
-EXP2A:
-![image](https://github.com/user-attachments/assets/e307313f-38dc-458a-bcac-6e80d6807cd1)
-
-EXP2B:
-![image](https://github.com/user-attachments/assets/bc8c7789-711e-49c1-a1f2-b5024b2207e1)
+```
+*Output:*
+![Screenshot 2024-12-24 212412](https://github.com/user-attachments/assets/00501f85-a94d-4d78-a303-6dcffe12dc62)
+![Screenshot 2024-12-24 212757](https://github.com/user-attachments/assets/ed6c9853-6092-4d95-ac19-2e8b53e72ffa)
+![Screenshot 2024-12-24 212831](https://github.com/user-attachments/assets/d360256c-7505-40ed-878a-0ea1b8c1c88f)
 
 
 
 
-**Result:**
+*Result:*
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
-
